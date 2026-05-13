@@ -89,6 +89,7 @@
             padding: 0;
             background: var(--primary-black);
             display: block;
+            overflow: hidden;
         }
 
         .banner-image {
@@ -98,6 +99,7 @@
             margin: 0;
             padding: 0;
             background: var(--primary-black);
+            object-fit: cover;
         }
 
         /* ===== HEADER/NAV ===== */
@@ -186,8 +188,12 @@
 
         /* ===== HERO SECTION ===== */
         .hero {
-            background: linear-gradient(90deg, rgba(5,5,5,0.95) 0%, rgba(5,5,5,0.75) 45%, rgba(5,5,5,0.2) 100%),
-                        url('https://evce-hge2-cs1w7mf1j-nazs-projects-67576d6e.vercel.app/hero-banner.png') center/cover;
+            background-color: var(--primary-black);
+            background-image: linear-gradient(90deg, rgba(5,5,5,0.95) 0%, rgba(5,5,5,0.75) 45%, rgba(5,5,5,0.2) 100%),
+                              url('https://evce-hge2-cs1w7mf1j-nazs-projects-67576d6e.vercel.app/hero-banner.png');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
             color: var(--white);
             padding: 120px 20px;
             text-align: center;
