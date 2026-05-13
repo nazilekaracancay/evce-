@@ -49,8 +49,6 @@
   background-position: center;
   background-repeat: no-repeat;
 }
-
-</style>
         :root {
             --primary-gold: #D4A63A;
             --dark-gold: #B88A24;
