@@ -649,7 +649,7 @@
 <body>
     <!-- BANNER -->
     <div class="banner-section">
-        <img src="https://evce-hge2-cs1w7mf1j-nazs-projects-67576d6e.vercel.app/hero-banner.png" alt="EVCE - Premium Evden Eve Nakliyat" class="banner-image">
+     <img src="./hero-banner.png" alt="EVCE - Premium Evden Eve Nakliyat" class="banner-image">
     </div>
 
     <!-- HEADER -->
