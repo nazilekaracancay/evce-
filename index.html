@@ -1,26 +1,939 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Evce Nakliyat</title>
-
-  <style>
-    body{
-      margin:0;
-      background:#000;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVCE | Profesyonel Evden Eve Nakliyat | Sakarya, Türkiye</title>
+    <meta name="description" content="EVCE - Premium kurumsal evden eve nakliyat hizmeti. 16 yıl deneyim, 8000+ başarılı taşıma. Sigortalı, güvenilir, profesyonel. Sakarya merkezli, Türkiye geneli hizmet.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@400;600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "EVCE Evden Eve Nakliyat",
+        "description": "Premium kurumsal evden eve nakliyat hizmeti",
+        "telephone": "+90 543 205 54 54",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Serdivan",
+            "addressRegion": "Sakarya",
+            "addressCountry": "TR"
+        },
+        "foundingDate": "2008",
+        "yearsInOperation": 16,
+        "areaServed": "TR",
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.9",
+            "ratingCount": "2340"
+        }
     }
+    </script>
 
-    img{
-      width:100%;
-      display:block;
-    }
-  </style>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-gold: #D4A63A;
+            --dark-gold: #B88A24;
+            --soft-gold: #E0B85A;
+            --primary-black: #0A0A0A;
+            --deep-black: #050505;
+            --charcoal: #1A1A1A;
+            --dark-gray: #2B2B2B;
+            --light-gray-bg: #F5F5F5;
+            --white: #FFFFFF;
+            --border-gray: #333333;
+            --whatsapp-green: #25D366;
+            --text-light: #D9D9D9;
+            --text-dark: #1A1A1A;
+            
+            /* Fonts */
+            --font-montserrat: 'Montserrat', sans-serif;
+            --font-inter: 'Inter', sans-serif;
+            --font-poppins: 'Poppins', sans-serif;
+        }
+
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        body {
+            font-family: var(--font-inter);
+            color: var(--text-dark);
+            line-height: 1.6;
+            background: var(--white);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* ===== BANNER SECTION ===== */
+        .banner-section {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            background: var(--primary-black);
+            display: block;
+        }
+
+        .banner-image {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin: 0;
+            padding: 0;
+            background: var(--primary-black);
+        }
+
+        /* ===== HEADER/NAV ===== */
+        header {
+            background: var(--deep-black);
+            border-bottom: 2px solid var(--primary-gold);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            padding: 16px 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: var(--font-montserrat);
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--primary-gold);
+            letter-spacing: 1px;
+        }
+
+        .logo-text {
+            color: var(--white);
+            font-size: 12px;
+            margin-top: 4px;
+        }
+
+        .cta-header {
+            display: flex;
+            gap: 12px;
+        }
+
+        .btn {
+            padding: 12px 28px;
+            border: none;
+            border-radius: 4px;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.3s ease;
+            font-family: var(--font-inter);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .btn-primary {
+            background: var(--primary-gold);
+            color: var(--white);
+            border: 2px solid var(--primary-gold);
+        }
+
+        .btn-primary:hover {
+            background: var(--dark-gold);
+            border-color: var(--dark-gold);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 16px rgba(212, 166, 58, 0.3);
+        }
+
+        .btn-secondary {
+            background: var(--whatsapp-green);
+            color: var(--white);
+            border: 2px solid var(--whatsapp-green);
+        }
+
+        .btn-secondary:hover {
+            background: #1ead53;
+            border-color: #1ead53;
+            transform: translateY(-2px);
+        }
+
+        @media (max-width: 768px) {
+            .btn {
+                padding: 10px 20px;
+                font-size: 12px;
+            }
+        }
+
+        /* ===== HERO SECTION ===== */
+        .hero {
+            background: linear-gradient(90deg, rgba(5,5,5,0.95) 0%, rgba(5,5,5,0.75) 45%, rgba(5,5,5,0.2) 100%),
+                        url('https://evce-hge2-cs1w7mf1j-nazs-projects-67576d6e.vercel.app/hero-banner.png') center/cover;
+            color: var(--white);
+            padding: 120px 20px;
+            text-align: center;
+            position: relative;
+            min-height: 600px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            z-index: 2;
+        }
+
+        .hero h1 {
+            font-family: var(--font-montserrat);
+            font-size: 56px;
+            font-weight: 800;
+            margin-bottom: 16px;
+            line-height: 1.2;
+            letter-spacing: -1px;
+        }
+
+        .hero-subtitle {
+            font-family: var(--font-poppins);
+            font-size: 20px;
+            margin-bottom: 32px;
+            color: var(--text-light);
+            line-height: 1.6;
+        }
+
+        .hero-cta {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 48px;
+        }
+
+        .hero-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 24px;
+            margin-top: 48px;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .stat {
+            background: rgba(212, 166, 58, 0.1);
+            border: 2px solid var(--primary-gold);
+            padding: 20px;
+            border-radius: 4px;
+            backdrop-filter: blur(10px);
+        }
+
+        .stat-number {
+            font-family: var(--font-montserrat);
+            font-size: 32px;
+            font-weight: 800;
+            color: var(--primary-gold);
+            margin-bottom: 8px;
+        }
+
+        .stat-label {
+            font-size: 12px;
+            color: var(--text-light);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        @media (max-width: 768px) {
+            .hero {
+                padding: 80px 20px;
+                min-height: 400px;
+            }
+            .hero h1 {
+                font-size: 32px;
+            }
+            .hero-subtitle {
+                font-size: 16px;
+            }
+        }
+
+        /* ===== SECTION TITLE ===== */
+        .section-title {
+            font-family: var(--font-montserrat);
+            font-size: 42px;
+            font-weight: 800;
+            color: var(--primary-black);
+            margin-bottom: 48px;
+            text-align: center;
+            letter-spacing: -1px;
+        }
+
+        .section-title span {
+            color: var(--primary-gold);
+        }
+
+        /* ===== SERVICES SECTION ===== */
+        .services {
+            background: var(--light-gray-bg);
+            padding: 100px 20px;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 32px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .service-card {
+            background: var(--white);
+            border: 2px solid var(--border-gray);
+            border-radius: 4px;
+            padding: 32px;
+            text-align: center;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .service-card:hover {
+            border-color: var(--primary-gold);
+            box-shadow: 0 8px 24px rgba(212, 166, 58, 0.15);
+            transform: translateY(-4px);
+        }
+
+        .service-icon {
+            font-size: 48px;
+            margin-bottom: 16px;
+            display: inline-block;
+        }
+
+        .service-card h3 {
+            font-family: var(--font-montserrat);
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--primary-black);
+            margin-bottom: 12px;
+        }
+
+        .service-card p {
+            font-family: var(--font-poppins);
+            font-size: 14px;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        /* ===== WHY SECTION ===== */
+        .why-section {
+            background: var(--primary-black);
+            color: var(--white);
+            padding: 100px 20px;
+        }
+
+        .why-section .section-title {
+            color: var(--white);
+        }
+
+        .why-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 32px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .why-card {
+            background: rgba(212, 166, 58, 0.05);
+            border-left: 4px solid var(--primary-gold);
+            padding: 28px;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+
+        .why-card:hover {
+            background: rgba(212, 166, 58, 0.1);
+            transform: translateX(8px);
+        }
+
+        .why-number {
+            font-family: var(--font-montserrat);
+            font-size: 36px;
+            font-weight: 800;
+            color: var(--primary-gold);
+            margin-bottom: 8px;
+        }
+
+        .why-card h3 {
+            font-family: var(--font-montserrat);
+            font-size: 16px;
+            font-weight: 700;
+            color: var(--white);
+            margin-bottom: 8px;
+        }
+
+        .why-card p {
+            font-family: var(--font-poppins);
+            font-size: 13px;
+            color: var(--text-light);
+        }
+
+        /* ===== TESTIMONIALS ===== */
+        .testimonials {
+            background: var(--light-gray-bg);
+            padding: 100px 20px;
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 28px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .testimonial {
+            background: var(--white);
+            padding: 28px;
+            border-radius: 4px;
+            border-top: 4px solid var(--primary-gold);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+        }
+
+        .testimonial:hover {
+            box-shadow: 0 8px 24px rgba(212, 166, 58, 0.12);
+            transform: translateY(-4px);
+        }
+
+        .testimonial-stars {
+            color: var(--primary-gold);
+            font-size: 14px;
+            margin-bottom: 12px;
+            letter-spacing: 2px;
+        }
+
+        .testimonial-text {
+            font-family: var(--font-poppins);
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 16px;
+            line-height: 1.6;
+            font-style: italic;
+            min-height: 80px;
+        }
+
+        .testimonial-author {
+            font-family: var(--font-montserrat);
+            font-weight: 700;
+            color: var(--primary-black);
+            font-size: 13px;
+        }
+
+        .testimonial-title {
+            font-family: var(--font-poppins);
+            font-size: 12px;
+            color: var(--primary-gold);
+            margin-top: 4px;
+            font-weight: 600;
+        }
+
+        /* ===== CTA PREMIUM SECTION ===== */
+        .cta-premium {
+            background: linear-gradient(135deg, var(--deep-black) 0%, var(--primary-black) 100%);
+            color: var(--white);
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .cta-premium h2 {
+            font-family: var(--font-montserrat);
+            font-size: 42px;
+            font-weight: 800;
+            margin-bottom: 16px;
+            color: var(--primary-gold);
+        }
+
+        .cta-premium p {
+            font-family: var(--font-poppins);
+            font-size: 18px;
+            margin-bottom: 32px;
+            color: var(--text-light);
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            flex-wrap: wrap;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .cta-buttons .btn {
+            flex: 1;
+            min-width: 180px;
+        }
+
+        /* ===== FAQ ===== */
+        .faq-section {
+            background: var(--light-gray-bg);
+            padding: 100px 20px;
+        }
+
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background: var(--white);
+            border: 2px solid var(--border-gray);
+            margin-bottom: 12px;
+            border-radius: 4px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .faq-item:hover {
+            border-color: var(--primary-gold);
+        }
+
+        .faq-question {
+            padding: 20px;
+            background: var(--white);
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-family: var(--font-montserrat);
+            font-weight: 700;
+            color: var(--primary-black);
+            user-select: none;
+        }
+
+        .faq-question:hover {
+            background: var(--light-gray-bg);
+        }
+
+        .faq-toggle {
+            color: var(--primary-gold);
+            transition: transform 0.3s;
+            font-weight: 700;
+            font-size: 20px;
+        }
+
+        .faq-item.active .faq-toggle {
+            transform: rotate(180deg);
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s;
+            padding: 0 20px;
+        }
+
+        .faq-item.active .faq-answer {
+            max-height: 400px;
+            padding: 0 20px 20px 20px;
+        }
+
+        .faq-answer p {
+            font-family: var(--font-poppins);
+            font-size: 14px;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        /* ===== FOOTER ===== */
+        footer {
+            background: var(--deep-black);
+            color: var(--white);
+            padding: 48px 20px;
+            text-align: center;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 32px;
+            margin-bottom: 28px;
+            flex-wrap: wrap;
+        }
+
+        .footer-links a {
+            color: var(--primary-gold);
+            text-decoration: none;
+            font-family: var(--font-inter);
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+
+        .footer-links a:hover {
+            color: var(--soft-gold);
+        }
+
+        .footer-bottom {
+            opacity: 0.8;
+            border-top: 1px solid var(--border-gray);
+            padding-top: 28px;
+            font-family: var(--font-poppins);
+            font-size: 13px;
+        }
+
+        /* ===== FLOATING BUTTON ===== */
+        .floating-btn {
+            position: fixed;
+            bottom: 28px;
+            right: 28px;
+            width: 60px;
+            height: 60px;
+            background: var(--primary-gold);
+            border: none;
+            border-radius: 50%;
+            color: var(--white);
+            font-size: 28px;
+            cursor: pointer;
+            box-shadow: 0 6px 20px rgba(212, 166, 58, 0.4);
+            transition: all 0.3s ease;
+            z-index: 999;
+            font-weight: 700;
+        }
+
+        .floating-btn:hover {
+            background: var(--dark-gold);
+            transform: scale(1.12);
+            box-shadow: 0 8px 28px rgba(212, 166, 58, 0.5);
+        }
+
+        @media (max-width: 480px) {
+            .floating-btn {
+                width: 52px;
+                height: 52px;
+                font-size: 24px;
+                bottom: 20px;
+                right: 20px;
+            }
+        }
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 768px) {
+            .section-title {
+                font-size: 28px;
+                margin-bottom: 32px;
+            }
+
+            .services, .why-section, .testimonials, .cta-premium, .faq-section {
+                padding: 60px 20px;
+            }
+        }
+    </style>
 </head>
-
 <body>
+    <!-- BANNER -->
+    <div class="banner-section">
+        <img src="https://evce-hge2-cs1w7mf1j-nazs-projects-67576d6e.vercel.app/hero-banner.png" alt="EVCE - Premium Evden Eve Nakliyat" class="banner-image">
+    </div>
 
-<img src="./hero-banner.png.png" alt="Evce Nakliyat">
+    <!-- HEADER -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    EVCE®
+                    <div class="logo-text">EVDEN EVE NAKLIYAT</div>
+                </div>
+                <div class="cta-header">
+                    <a href="tel:+905432055454" class="btn btn-primary">📞 ARA</a>
+                    <a href="https://wa.me/+905432055454?text=Merhaba,%20nakliyat%20hakkında%20bilgi%20istiyorum" class="btn btn-secondary">💬 WHATSAPP</a>
+                </div>
+            </nav>
+        </div>
+    </header>
 
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Premium Nakliyat<br>Hizmeti</h1>
+            <p class="hero-subtitle">
+                16 yıl deneyim, 8000+ başarılı taşıma ile Türkiye'nin güvenilir nakliyat markası
+            </p>
+            <div class="hero-cta">
+                <a href="https://wa.me/+905432055454?text=Merhaba,%20nakliyat%20hakkında%20bilgi%20istiyorum" class="btn btn-secondary">💬 ÜCRETSİZ TEKLIF AL</a>
+                <a href="tel:+905432055454" class="btn btn-primary">📞 HEMEN ARA</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <div class="stat-number">16+</div>
+                    <div class="stat-label">Yıl Deneyim</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">8000+</div>
+                    <div class="stat-label">Başarılı Taşıma</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">4.9⭐</div>
+                    <div class="stat-label">Müşteri Rating</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="services">
+        <div class="container">
+            <h2 class="section-title">Hizmetlerimiz</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🏠</div>
+                    <h3>Evden Eve Nakliyat</h3>
+                    <p>Eşyalarınızı özenle paketleyip, güvenle yeni adresine taşıyoruz</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🏢</div>
+                    <h3>Asansörlü Taşıma</h3>
+                    <p>Yüksek katlı binalarda profesyonel ve güvenli hizmet</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🚛</div>
+                    <h3>Şehirler Arası Nakliyat</h3>
+                    <p>Türkiye'nin her yerine hızlı ve güvenilir taşıma</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">💼</div>
+                    <h3>Ofis Taşıması</h3>
+                    <p>Kurumsal taşımalar için özel çözümler sunuyoruz</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHY SECTION -->
+    <section class="why-section">
+        <div class="container">
+            <h2 class="section-title">Neden EVCE?</h2>
+            <div class="why-grid">
+                <div class="why-card">
+                    <div class="why-number">16</div>
+                    <h3>Yıl Deneyim</h3>
+                    <p>Kanıtlanmış güvenilirlik ve profesyonellik</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-number">8K+</div>
+                    <h3>Taşıma</h3>
+                    <p>Binlerce mutlu müşteri tecrübesi</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-number">4.9</div>
+                    <h3>Rating</h3>
+                    <p>Yüksek müşteri memnuniyeti</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-number">100%</div>
+                    <h3>Sigortalı</h3>
+                    <p>Tüm taşımalar sigorta kapsamında</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-number">24/7</div>
+                    <h3>Destek</h3>
+                    <p>Her zaman ulaşılabilir ekip</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-number">TR</div>
+                    <h3>Türkiye</h3>
+                    <p>Tüm bölgelere hizmet veriyoruz</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">Müşteri <span>Yorumları</span></h2>
+            <div class="testimonials-grid">
+                <div class="testimonial">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">"Çok özenli çalışıyorlar. Eşyalarım hiç hasar görmeden geldi. Temizlik ve düzen konusunda çok titiz bir ekip. Tavsiye ederim."</p>
+                    <div class="testimonial-author">Ahmet K.</div>
+                    <div class="testimonial-title">Serdivan → Adapazarı</div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">"Profesyonel ve güvenilir hizmet. Paketleme ve taşıma işlemlerinde çok başarılı oldular. Yeni evim temiz bir şekilde teslim alındı."</p>
+                    <div class="testimonial-author">Fatma Ş.</div>
+                    <div class="testimonial-title">Serdivan → Ankara</div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">"Hızlı, güvenilir ve temiz hizmet. Ekip çalışırken hiç taşkınlık yapmadı, her yeri düzgünce temizlediler. Çok memnunum."</p>
+                    <div class="testimonial-author">Murat Y.</div>
+                    <div class="testimonial-title">İstanbul Nakliyat</div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">"Titiz ve profesyonel bir ekip. Asansörlü taşımada da çok başarılı oldular. Herhangi bir sorun çıkmadı, kesinlikle önerebilirim."</p>
+                    <div class="testimonial-author">Elif T.</div>
+                    <div class="testimonial-title">Asansörlü Taşıma</div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">"16 yıllık tecrübe gerçekten hissediliyor. Eşyaları çok itinalı paketlediler. En önemlisi temiz ve düzenli çalıştılar."</p>
+                    <div class="testimonial-author">Serkan K.</div>
+                    <div class="testimonial-title">İzmit Taşıması</div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">"Uygun fiyat ve kaliteli hizmet. Taşındığımız alanları çok temiz bıraktılar. Depozitin hepsini geri aldık."</p>
+                    <div class="testimonial-author">Zeynep D.</div>
+                    <div class="testimonial-title">Bursa Taşıması</div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">"Çok dikkatli ve dürüst bir firma. Kütüphanedeki kitaplarım hiç hasar görmedi. Paketleme işi çok profesyonel olmuş."</p>
+                    <div class="testimonial-author">Mehmet A.</div>
+                    <div class="testimonial-title">Hassas Eşya</div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">"Özenli ve temiz taşıyıcı. Ofis taşımasında da çok profesyonel çalıştılar. Şirketim çok memnun kaldı."</p>
+                    <div class="testimonial-author">Gülden K.</div>
+                    <div class="testimonial-title">Ofis Taşıması</div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">"Temizlik ve düzen konusunda çok titizler. Taşıma sırasında evimi koruyan bir şekilde çalıştılar. Eşyalar güvenli geldi."</p>
+                    <div class="testimonial-author">Nilay Ç.</div>
+                    <div class="testimonial-title">Antika Taşıması</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA PREMIUM -->
+    <section class="cta-premium">
+        <div class="container">
+            <h2>Ücretsiz Fiyat Teklifi Almak İçin</h2>
+            <p>Hemen iletişime geçin ve profesyonel hizmetimizden yararlanın</p>
+            <div class="cta-buttons">
+                <a href="https://wa.me/+905432055454?text=Merhaba,%20nakliyat%20hakkında%20bilgi%20istiyorum" class="btn btn-secondary">💬 WHATSAPP'TAN YAZIN</a>
+                <a href="tel:+905432055454" class="btn btn-primary">📞 HEMEN ARA: 0 543 205 54 54</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title">Sık Sorulan <span>Sorular</span></h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Türkiye genelinde hizmet veriyor musunuz?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Evet, Sakarya merkezli olmamıza rağmen tüm Türkiye'ye profesyonel nakliyat hizmeti veriyoruz. 16 yıllık deneyim ve 8000+ başarılı taşıma tecrübesi ile güvenilir hizmet sunmaktayız.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Sigortalı taşıma sağlıyor musunuz?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Evet, tüm taşımalarımız kapsamlı sigorta kapsamındadır. Herhangi bir hasar durumunda tam tazminat ödüyoruz. 16 yıllık güvenilir hizmetimiz bunu kanıtlamaktadır.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Taşıma sırasında temizlik yapıyor musunuz?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Evet, özenli ve temiz taşımacılık bizim temel ilkemizdir. Taşıma sırasında evlerinizi koruruz, işlem tamamlandıktan sonra alanları temiz ve düzenli bırakırız.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Montaj ve demontaj hizmeti var mı?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Evet, mobilya montaj ve demontaj hizmetleri sunuyoruz. Profesyonel ekibimiz tüm işlemleri özenle ve titizlikle gerçekleştirir.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Hassas eşyaları nasıl taşıyorsunuz?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Antika, sanat eserleri, elektronik ve diğer hassas eşyaları özel dikkat ve profesyonel ambalajla taşıyoruz. Detaylı bilgi için bizimle iletişime geçebilirsiniz.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="tel:+905432055454">📞 0 543 205 54 54</a>
+                <a href="https://wa.me/+905432055454">💬 WhatsApp</a>
+                <span style="color: var(--text-light);">Sakarya Merkezli • Türkiye Geneli</span>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 EVCE | Premium Evden Eve Nakliyat | 16 Yıl Deneyim | 8000+ Başarılı Taşıma</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- FLOATING BUTTON -->
+    <a href="https://wa.me/+905432055454?text=Merhaba,%20nakliyat%20hakkında%20bilgi%20istiyorum" class="floating-btn">💬</a>
+
+    <!-- SCRIPTS -->
+    <script>
+        // FAQ Toggle
+        document.querySelectorAll('.faq-item').forEach(item => {
+            item.querySelector('.faq-question').addEventListener('click', () => {
+                document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('active'));
+                item.classList.add('active');
+            });
+        });
+
+        // Analytics
+        document.querySelectorAll('a[href^="https://wa.me"], a[href^="tel:"]').forEach(link => {
+            link.addEventListener('click', () => {
+                if (typeof gtag !== 'undefined') {
+                    gtag('event', 'contact_click', {
+                        'type': link.href.includes('wa.me') ? 'whatsapp' : 'phone'
+                    });
+                }
+            });
+        });
+    </script>
 </body>
 </html>
