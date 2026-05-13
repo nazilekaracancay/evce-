@@ -41,14 +41,6 @@
             box-sizing: border-box;
         }
 
-        .hero {
-  background-image:
-    linear-gradient(90deg, rgba(5,5,5,0.92) 0%, rgba(5,5,5,0.65) 45%, rgba(5,5,5,0.25) 100%),
-    url('./hero-banner.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
         :root {
             --primary-gold: #D4A63A;
             --dark-gold: #B88A24;
